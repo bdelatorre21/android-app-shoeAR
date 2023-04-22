@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/shoeRl"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/gray02">
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdfView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-94dp"
+                    android:layout_marginBottom="2dp"
+                    android:maxLines="1"
+                    android:text="Last Accessed: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/sizeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-92dp"
+                    android:layout_marginBottom="2dp"
+                    android:maxLines="1"
+                    android:text="Last Accessed: "
+                    android:textSize="10sp" />
+            </com.github.barteksc.pdfviewer.PDFView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/shoeRl"
+            android:maxLines="1"
+            android:text="Shoe Name Here"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/descTv"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTv"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/shoeRl"
+            android:maxLines="3"
+            android:text="The desc goes hereThe desc goes hereThe desc goes hereThe desc goes hereThe desc goes hereThe desc goes hereThe desc goes hereThe desc goes hereThe desc goes hereThe desc goes hereThe desc goes hereThe desc goes here"/>
+
+        <TextView
+            android:id="@+id/categoryTv"
+            style="@style/TextAppearance.Material3.LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:maxLines="1"
+            android:text="Category Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/shoeRl"
+            android:maxLines="1"
+            android:text="Last Accessed: "
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            style="@style/TextAppearance.Material3.LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/categoryTv"
+            android:layout_toEndOf="@+id/sizeTv"
+            android:maxLines="1"
+            android:text="dd/MMMM/yyyy"
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/shape_button03"
+            android:padding="5dp"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

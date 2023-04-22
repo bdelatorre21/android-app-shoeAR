@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "691810974968",
+    "project_id": "shoe-app-kotlin",
+    "storage_bucket": "shoe-app-kotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691810974968:android:3eea1a1f4377486f040f0d",
+        "android_client_info": {
+          "package_name": "com.example.finalprojectdlt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691810974968-k5u89u637mpagafgfmd6b61ukgappf1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcuL3Ql355yRac6HKGe8KFbjC4C5kW3jI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691810974968-k5u89u637mpagafgfmd6b61ukgappf1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
